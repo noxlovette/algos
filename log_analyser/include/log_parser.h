@@ -18,6 +18,6 @@ typedef struct {
 
 LogEntry *parse_log_line(const char *line);
 void free_log_entry(LogEntry *entry);
-uint64_t hash_string(const char *str);
+uint64_t hash(const char *str);
 
 #endif

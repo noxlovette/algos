@@ -24,7 +24,7 @@ LogEntry *parse_log_line(const char *line) {
   if (newline)
     *newline = '\0';
 
-  entry->hash = hash_string(entry->message);
+  entry->hash = hash(entry->message);
   entry->level = LOG_INFO;
   entry->timestamp = time(NULL);
 
