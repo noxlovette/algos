@@ -107,5 +107,3 @@ func testBFS() {
     let pathToEve = graph.bfs(start: alice, target: eve)
     print("Path from Alice to Eve: \(pathToEve ? "YES" : "NO")")
 }
-
-testBFS()
